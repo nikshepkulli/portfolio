@@ -1,0 +1,65 @@
+#contact 
+{
+    background:#ffffff;
+    width: 100%;
+}
+a 
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.cont
+{
+    margin: 0 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.con1
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.con2
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.con3
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.con4
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+   .cont {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+   }
+}

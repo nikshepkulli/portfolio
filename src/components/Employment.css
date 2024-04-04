@@ -1,0 +1,48 @@
+#employment {
+  text-align: justify;
+  background: #ffffff;
+  width: 100%;
+  height: auto; /* Change height to auto for better responsiveness */
+  padding: 20px; 
+  list-style: circle;/* Add padding for better spacing on smaller screens */
+}
+
+#employment .jobs {
+  margin-left: 20px; /* Adjust the margin for better spacing on smaller screens */
+  margin-right: 20px; /* Adjust the margin for better spacing on smaller screens */
+}
+
+#employment h2 {
+  font-size: 1.8em; /* Decrease font size for better readability on smaller screens */
+  padding: 10px; /* Adjust padding for better spacing on smaller screens */
+}
+
+#employment .header {
+  font-size: 1.4em; /* Decrease font size for better readability on smaller screens */
+}
+
+#employment p {
+  line-height: 1.4; /* Adjust line height for better readability on smaller screens */
+  margin: 10px auto; /* Adjust margin for better spacing on smaller screens */
+  font-size: 1em; /* Decrease font size for better readability on smaller screens */
+}
+
+#employment ul {
+  font-size: 1em; /* Decrease font size for better readability on smaller screens */
+}
+
+@media (max-width: 768px) {
+  #employment {
+    width: auto;
+      height: auto;
+  }
+  #employment h2 {
+    text-align: center;
+    width: auto;
+  }
+
+  #employment .jobs {
+    margin-left: -18px;
+
+  }
+}
