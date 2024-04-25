@@ -27,7 +27,7 @@ jobs:
         run: npm run build -- --no-warnings  # Passing --no-warnings to ignore warnings as errors
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: actions/deploy-pages@v4
         with:
           ACCESS_TOKEN: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           BRANCH: gh-pages
