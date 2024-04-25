@@ -1,98 +1,96 @@
 #achievements {
-    background: #B6D0E2;
-    width: 100%;
-    height: auto; /* Change height to auto for better responsiveness */
-    padding: 20px; /* Add padding for better spacing on smaller screens */
+  background: #b6d0e2;
+  width: 100%;
+  height: auto; /* Change height to auto for better responsiveness */
+  padding: 20px; /* Add padding for better spacing on smaller screens */
 }
 
 #achievements .heading {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #achievements .heading p {
-    font-size: 1.23em;
+  font-size: 1.23em;
 }
 
-#achievements .heading:hover .fa.fa-trophy  {
-    /* font-size: 3.2em; */
-    color: #a9a9a9;
+#achievements .heading:hover .fa.fa-trophy {
+  /* font-size: 3.2em; */
+  color: #ffa500;
 }
-
-
 
 #achievements .achi {
-    margin-left: 20px; /* Adjust the margin for better spacing on smaller screens */
-    margin-right: 20px; /* Adjust the margin for better spacing on smaller screens */
+  margin-left: 20px; /* Adjust the margin for better spacing on smaller screens */
+  margin-right: 20px; /* Adjust the margin for better spacing on smaller screens */
 }
 
 #achievements h4 {
-    font-size: 1.2em; /* Decrease font size for better readability on smaller screens */
+  font-size: 1.2em; /* Decrease font size for better readability on smaller screens */
 }
 
 #achievements p {
-    font-size: 1em; /* Decrease font size for better readability on smaller screens */
+  font-size: 1em; /* Decrease font size for better readability on smaller screens */
 }
 
 #achievements h2 {
-    font-size: 1.8em; /* Decrease font size for better readability on smaller screens */
-    padding: 10px; /* Adjust padding for better spacing on smaller screens */
+  font-size: 1.8em; /* Decrease font size for better readability on smaller screens */
+  padding: 10px; /* Adjust padding for better spacing on smaller screens */
 }
 
 #achievements .ach {
-    display: flex;
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: flex-start; /* Adjust alignment for better spacing on smaller screens */
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: flex-start; /* Adjust alignment for better spacing on smaller screens */
 }
 
 #achievements .ach1 h4 {
-    /* You can add specific styles for this element if needed */
+  /* You can add specific styles for this element if needed */
 }
 
 #achievements .ach1 p {
-    margin-top: 0; /* Reset margin-top for better spacing on smaller screens */
-    line-height: 1.4; /* Adjust line height for better readability on smaller screens */
-    text-align: left; /* Adjust text alignment for better readability on smaller screens */
+  margin-top: 0; /* Reset margin-top for better spacing on smaller screens */
+  line-height: 1.4; /* Adjust line height for better readability on smaller screens */
+  text-align: left; /* Adjust text alignment for better readability on smaller screens */
 }
 
 #achievements i {
-    font-size: 2.2em;
-    margin-left: 10px;
+  font-size: 2.2em;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
-    #achievements {
-        height: auto;
-        width: auto;
-    }
+  #achievements {
+    height: auto;
+    width: auto;
+  }
 
-    #achievements .achi {
-        /* margin-left: 20px;
+  #achievements .achi {
+    /* margin-left: 20px;
         margin-right: 20px; */
-    }
+  }
 
-    #achievements h4 {
-        font-size: 1.2em;
-    }
+  #achievements h4 {
+    font-size: 1.2em;
+  }
 
-    #achievements p {
-        font-size: 1em;
-    }
+  #achievements p {
+    font-size: 1em;
+  }
 
-    #achievements h2 {
-        font-size: 1.6em;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  #achievements h2 {
+    font-size: 1.6em;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #achievements .ach {
-        align-items: flex-start;
-    }
+  #achievements .ach {
+    align-items: flex-start;
+  }
 
-    #achievements .ach1 p {
-        line-height: 1.4;
-        text-align: left;
-    }
+  #achievements .ach1 p {
+    line-height: 1.4;
+    text-align: left;
+  }
 }
