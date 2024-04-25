@@ -44,9 +44,12 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: build
+          token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN  }}
+          artifact_name: my-app-artifact  # Update artifact name to match the uploaded artifact
+          timeout: 600000
+          error_count: 10
+          reporting_interval: 5000
+          preview: false
 
 permissions:
   id-token: write
