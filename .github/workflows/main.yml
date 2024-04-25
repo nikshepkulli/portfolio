@@ -25,6 +25,12 @@ jobs:
       - name: Build React app
         run: npm run build -- --no-warnings  # Passing --no-warnings to ignore warnings as errors
 
+      - name: Archive production build
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-app-artifact
+          path: build  # Assuming 'build' is the directory containing your production build
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
