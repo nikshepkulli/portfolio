@@ -3,7 +3,7 @@ import "./Employment.css"; // Import the CSS file
 
 const Employment = () => (
   <section id="employment">
-    <h2>Employment</h2>
+    <h2>Experience</h2>
     <div class="jobs">
     <div className="job">
       <p class="header"><strong>Adjunct Professor</strong></p>
