@@ -10,24 +10,7 @@ const About = () => (
     </div>
     <div class="text">
       <p>
-        I am a Ph.D. candidate in Computer Science, specializing in data science
-        and machine learning. As a Research Assistant at Sacred Heart
-        University, I've dedicated myself to advancing the field, contributing
-        to a 50% reduction in laboratory accidents. My academic focus includes
-        using Python, R, and SQL for projects like breast cancer prediction,
-        sentiment analysis, and COVID-19 tweet modeling, achieving consistently
-        high accuracy. In a Data Science Virtual Intern role at British Airways,
-        I refined skills in web scraping and predictive modeling, employing
-        tools such as Beautiful Soup, Scikit-learn, and Random Forest. With over
-        four years as a Software Engineer at Cerner Corporation, I enhanced AI
-        and ML-based life-saving technology, improved data collection
-        frameworks, and streamlined workflows. Proficient in Java, C, C++, C#,
-        JS, and big data technologies, I integrated Agile and semantic
-        versioning methodologies. Driven by a passion for applying data science
-        and machine learning to solve real-world challenges and drive business
-        growth, I am ready to make meaningful contributions to the academic
-        community and push the boundaries of knowledge in computer science
-        during my Ph.D. journey.
+       I am a passionate technologist with experience as a Software Engineer and a current Adjunct Professor at Sacred Heart University.  While I find teaching rewarding, my ultimate career goal is to become a  Senior Software Engineer or  Data Scientist.  To achieve this, I am currently pursuing a Ph.D. in Computer Science, specializing in data science and machine learning.
         <div class="paper">
           <p>
             Publication:{" "}
