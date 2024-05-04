@@ -17,7 +17,7 @@ const Navbar = () => {
           <a href='#about'>About Me</a>
           <a href='#education'>Work Experience</a>
           <a href='#achievements'>Achievements</a>
-          <a href='#skills'>Skill</a>
+          <a href='#skills'>Skills</a>
           <a href='#projects'>Projects</a>
           <a href='#contact'>Contact</a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}> 
