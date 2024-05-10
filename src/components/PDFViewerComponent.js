@@ -1,17 +1,36 @@
-import React from "react";
-import {Worker, Viewer} from "@react-pdf-viewer/core";
-import "@react-pdf-viewer/core/lib/styles/index.css";
-import {pdfjs} from "react-pdf";
+import React, { Component } from 'react';
+import { Document, Page } from 'react-pdf';
 
-// Use the worker from pdfjs-dist
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+class PDFViewerComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      numPages: null,
+      pageNumber: 1,
+    };
+  }
 
-const PDFViewerComponent = ({pdfUrl}) => (
-  <div style={{height: "500px"}}>
-    <Worker workerUrl={pdfjs.GlobalWorkerOptions.workerSrc}>
-      <Viewer fileUrl={pdfUrl} />
-    </Worker>
-  </div>
-);
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  };
+
+  render() {
+    const { pageNumber, numPages } = this.state;
+
+    return (
+      <div>
+        <Document
+          file="path/to/your/pdf/file.pdf"
+          onLoadSuccess={this.onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} />
+        </Document>
+        <p>
+          Page {pageNumber} of {numPages}
+        </p>
+      </div>
+    );
+  }
+}
 
 export default PDFViewerComponent;
