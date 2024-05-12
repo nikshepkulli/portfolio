@@ -5,18 +5,14 @@ const pdfPath = require("../rewards&recognition.pdf");
 const Achievements = () => {
   const [showPdf1, setShowPdf1] = useState(false);
 
-  const openPdf1 = () => {
-    setShowPdf1(true);
-  };
-
-  const closePdf1 = () => {
-    setShowPdf1(false);
+  const togglePdf1 = () => {
+    setShowPdf1(!showPdf1);
   };
 
   return (
     <section id="achievements">
       <div className="heading">
-        <Button variant="link" onClick={openPdf1}>
+        <Button variant="link" onClick={togglePdf1}>
           <i className="fa fa-trophy" aria-hidden="true"></i>
         </Button>
         <h2>Achievements</h2>
@@ -29,7 +25,7 @@ const Achievements = () => {
             width="100%"
             height="600px"
           />
-          <Button variant="link" onClick={closePdf1}>
+          <Button variant="link" onClick={togglePdf1}>
             Close
           </Button>
         </div>
