@@ -23,7 +23,8 @@ const Achievements = () => {
             src={pdfPath}
             type="application/pdf"
             width="100%"
-            height="600px"
+            height="100%"
+            style={{minHeight: "600px"}}
           />
           <Button variant="link" onClick={togglePdf1}>
             Close
