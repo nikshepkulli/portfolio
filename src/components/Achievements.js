@@ -1,28 +1,39 @@
 import React, {useState} from "react";
 import {Button} from "react-bootstrap";
 import "./Achievements.css";
-import PDFViewerComponent from "./PDFViewerComponent";
-
+const pdfPath = require("../rewards&recognition.pdf");
 const Achievements = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showPdf1, setShowPdf1] = useState(false);
 
-  const handleClose = () => setShowModal(false);
-  const handleShow = () => setShowModal(true);
-  const pdfUrl1 = "src/rewards&recognition.pdf";
-  const pdfUrl2 = "src/rewards&recognition2.pdf";
+  const openPdf1 = () => {
+    setShowPdf1(true);
+  };
 
-  const modalContent = <PDFViewerComponent pdfUrl={pdfUrl2} />;
+  const closePdf1 = () => {
+    setShowPdf1(false);
+  };
 
   return (
     <section id="achievements">
-      <div className="achi"></div>
       <div className="heading">
-        <Button variant="primary" onClick={handleShow}>
-          Open PDF Viewer
+        <Button variant="link" onClick={openPdf1}>
+          <i className="fa fa-trophy" aria-hidden="true"></i>
         </Button>
         <h2>Achievements</h2>
-        {showModal && modalContent}
       </div>
+      {showPdf1 && (
+        <div className="pdf-container">
+          <embed
+            src={pdfPath}
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          />
+          <Button variant="link" onClick={closePdf1}>
+            Close
+          </Button>
+        </div>
+      )}
     </section>
   );
 };
