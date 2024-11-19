@@ -1,137 +1,89 @@
 #about {
-    text-align: justify;
-    width: 100%;
-    height: auto;
-    background: #ffffff;
-    font-family: sans-serif;
-    display: flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  width: 90%;
+  align-items: flex-start; /* Align to the top */
+  gap: 50px;
+}
+
+#about .photo {
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+
+#about .photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#about .photo img:hover {
+  transform: scale(1.05);
+}
+
+#about .text {
+  flex: 1;
+  text-align: justify; /* Restore justify alignment */
+}
+
+#about .text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #333;
+  text-align: justify; /* Ensure each paragraph is justified */
+}
+
+.additional-info {
+  margin-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  text-align: left; /* Ensure links are left-aligned */
+}
+
+#about .paper {
+  margin-bottom: 10px;
+}
+
+#about a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#about a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center; /* Center items vertically when stacked */
+    gap: 30px;
   }
 
- /* #about .photo {
-  width: 450px;
-  height: 450px;
-  background: #000;
-  align-items: center;
- } */
-  
- #about img 
- {
-  margin-top: 50px;
-  margin-left: 20px;
-  width: 450px;
-  height: 450px; 
- }
-
-
- #about .text {
-  margin: 20px;
- }
-  #about h2 
-  {
-    font-size: 2.2em;
-    padding: 20px; 
-  }
-  
-  #about p {
-    /* top: -100px; */
-    /* Optional: Add additional styling for the paragraph */
-    line-height: 1.5; /* Adjust line height for better readability */
-    max-width: 1000px; /* Set a maximum width for the paragraph */
-    margin: 0 auto; /* Center the paragraph within its container */
-    font-size: 1.3em;
+  #about .photo {
+    max-width: 300px;
   }
 
-  #about .paper {
-    margin-top: 10px;
+  #about .text {
+    text-align: justify; /* Maintain justify on mobile */
+    width: 100%; /* Full width on mobile */
   }
 
-  #about a {
-    font-size: 0.8em;
-    margin-top: 10px;
-    color: #000;
+  #about .text p {
+    text-align: justify; /* Ensure paragraphs are justified on mobile */
   }
-
-  #about a:hover {
-    color: blue;
-  }
-  
-  #about .paper p {
-    font-size: 1.1em;
-  }
-
-  @media (max-width: 768px) {
-    #about {
-      text-align: justify;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: auto;
-      height: auto;
-    }
-     
-    #about img {
-      /* margin-top: -5px; */
-      margin-right: 24px;
-      width: 350px;
-      height: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #about .text {
-      margin: 0;
-     }
-
-    #about p {
-      /* Optional: Add additional styling for the paragraph */
-      line-height: 1.6; /* Adjust line height for better readability */
-      max-width: 800px; /* Set a maximum width for the paragraph */
-      margin: 0 auto; /* Center the paragraph within its container */
-      font-size: 1em;
-      padding: 10px;
-    }
-    }
-
-    @media (min-width: 779px) and (max-width: 1033px)
-    {  
-         #about {
-      text-align: justify;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: auto;
-      height: auto;
-    }
-     
-    #about img {
-      /* margin-top: -5px; */
-      margin-right: 24px;
-      width: 350px;
-      height: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-      
-    }
-    @media (min-width: 1034px) and (max-width: 1500px) {
-       #about {
-        /* background: yellow; */
-       }
-       #about img 
-       {
-        margin-top: 50px;
-        margin-left: 20px;
-        width: 100%;
-        height: 100%; 
-       }
-  
-
-       #about .text p {
-        
-        /* font-size: 1em; */
-       }
-    }
+}

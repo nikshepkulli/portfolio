@@ -63,3 +63,13 @@ a
       height: auto;
    }
 }
+
+.cont a i {
+   font-size: 2.5em; /* Adjust this value to make the icons larger */
+   color: #000; /* Optional: add a color if needed */
+   transition: transform 0.3s ease; /* Optional: add a nice hover effect */
+ }
+ 
+ .cont a i:hover {
+   transform: scale(1.1); /* Optional: slight scale on hover */
+ }
