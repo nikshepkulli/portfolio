@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header>
-        <h3>Nikshep</h3>
+        <h3>Nikshep A Kulli</h3>
         <nav ref={navRef}> 
           <a href='#about'>About Me</a>
           <a href='#education'>Work Experience</a>
