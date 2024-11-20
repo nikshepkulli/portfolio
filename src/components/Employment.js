@@ -3,8 +3,43 @@ import "./Employment.css"; // Import the CSS file
 
 const Employment = () => (
   <section id="employment">
-    <h2>Experience</h2>
+    <h2>Experience's:</h2>
     <div class="jobs">
+       {/* New Job: Chief Technology Officer at Starteryous */}
+<div className="job">
+  <p class="header"><strong>Chief Technology Officer</strong></p>
+  <p>Starteryou Inc., New York, United States (Remote)</p>
+  <p>Jul 2024 - Present</p>
+  <ul>
+    <li>
+      1. Lead the vision and strategy for an innovative platform connecting teenagers and college students with meaningful part-time job opportunities.
+    </li>
+    <li>
+      2. Oversee development of robust software solutions using a modern tech stack:
+      <ul>
+        <li>Front-end: React with Vite, Bootstrap</li>
+        <li>Back-end: Node.js</li>
+        <li>Database: MongoDB</li>
+        <li>Infrastructure: AWS (EC2), Docker, Kubernetes</li>
+      </ul>
+    </li>
+    <li>
+      3. Implement secure communication protocols and manage SSL certificates.
+    </li>
+    <li>
+      4. Utilize GitHub for source control and CI/CD processes.
+    </li>
+    <li>
+      5. Design scalable, container-based infrastructure with plans for Kubernetes orchestration.
+    </li>
+    <li>
+      6. Mentor emerging tech talent and foster a culture of innovation.
+    </li>
+    <li>
+      7. Ensure user-centric platform development and continuous technological improvement.
+    </li>
+  </ul>
+</div>
     <div className="job">
       <p class="header"><strong>Adjunct Professor</strong></p>
       <p>Sacred Heart University, Fairfield, CT</p>
@@ -52,6 +87,7 @@ const Employment = () => (
         </li>
       </ul>
     </div>
+   
     {/* Job 1: Research Assistant at Sacred Heart University */}
     <div className="job">
       <p class="header"><strong>Research Assistant</strong></p>
