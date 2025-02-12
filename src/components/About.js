@@ -27,6 +27,10 @@ const About = () => (
               Publication:{" "}
               <a href="https://link.springer.com/chapter/10.1007/978-3-031-53963-3_7">
                 COVID-19 Vaccine Response on Social Media Using LDA Analysis
+              </a>{" "}
+              |{" "}
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=W3eBK1gAAAAJ&citation_for_view=W3eBK1gAAAAJ:mVmsd5A6BfQC">
+                The Gambit of De-Dollarization: Unveiling New Currency Frontiers through NLP
               </a>
             </p>
           </div>
