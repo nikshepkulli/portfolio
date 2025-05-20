@@ -10,7 +10,7 @@ const About = () => (
       </div>
       <div className="text">
         <p>
-          I am the <strong>Chief Technology Officer (CTO) at Starteryou Inc.,</strong> where I lead the vision and strategy for an innovative platform connecting teenagers and college students with meaningful part-time job opportunities. 
+          I am the <strong>Senior Software Engineer at Starteryou Inc.,</strong> where I lead the vision and strategy for an innovative platform connecting teenagers and college students with meaningful part-time job opportunities. 
         </p>
 
         <p>
