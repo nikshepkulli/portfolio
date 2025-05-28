@@ -7,7 +7,7 @@ const Employment = () => (
     <div class="jobs">
        {/* New Job: Chief Technology Officer at Starteryous */}
 <div className="job">
-  <p class="header"><strong>Chief Technology Officer</strong></p>
+  <p class="header"><strong>Senior Software Engineer</strong></p>
   <p>Starteryou Inc., New York, United States (Remote)</p>
   <p>Jul 2024 - Present</p>
   <ul>
