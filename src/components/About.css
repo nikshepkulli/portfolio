@@ -1,0 +1,89 @@
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  width: 90%;
+  align-items: flex-start; /* Align to the top */
+  gap: 50px;
+}
+
+#about .photo {
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+
+#about .photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#about .photo img:hover {
+  transform: scale(1.05);
+}
+
+#about .text {
+  flex: 1;
+  text-align: justify; /* Restore justify alignment */
+}
+
+#about .text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #333;
+  text-align: justify; /* Ensure each paragraph is justified */
+}
+
+.additional-info {
+  margin-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  text-align: left; /* Ensure links are left-aligned */
+}
+
+#about .paper {
+  margin-bottom: 10px;
+}
+
+#about a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#about a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center; /* Center items vertically when stacked */
+    gap: 30px;
+  }
+
+  #about .photo {
+    max-width: 300px;
+  }
+
+  #about .text {
+    text-align: justify; /* Maintain justify on mobile */
+    width: 100%; /* Full width on mobile */
+  }
+
+  #about .text p {
+    text-align: justify; /* Ensure paragraphs are justified on mobile */
+  }
+}

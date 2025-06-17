@@ -1,0 +1,75 @@
+#contact 
+{
+    background:#ffffff;
+    width: 100%;
+}
+a 
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.cont
+{
+    margin: 0 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.con1
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.con2
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.con3
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.con4
+{
+   padding-right: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+   .cont {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+   }
+}
+
+.cont a i {
+   font-size: 2.5em; /* Adjust this value to make the icons larger */
+   color: #000; /* Optional: add a color if needed */
+   transition: transform 0.3s ease; /* Optional: add a nice hover effect */
+ }
+ 
+ .cont a i:hover {
+   transform: scale(1.1); /* Optional: slight scale on hover */
+ }
